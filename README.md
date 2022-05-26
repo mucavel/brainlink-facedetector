@@ -1,5 +1,5 @@
 # Brain Link Face Detector - ReactJS
-Versão da página de agendamento do Fresh Look desenvolvida em ReactJS.
+Aplicação de Detenção Facial desenvolvida em ReactJS baseada na API "Face-api".
 
 # Get started
 # Iniciar

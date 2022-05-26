@@ -16,10 +16,11 @@ class App extends React.Component{
     }
 
     onInputChange = (event) => {
-        console.log(event.target.value)
+        // this.setState({input : event.target.value})
     }
     onButtonClick = () => {
         console.log('cliked')
+        
     }
     render(){
         return(
@@ -30,7 +31,6 @@ class App extends React.Component{
                 <InputForm onInputChange={this.onInputChange} onButtonClick={this.onButtonClick}/>
                 <FaceContainer imgSrc={testImg}/>
             </div>
-            
         );
     }
 }

@@ -25,8 +25,6 @@ const FaceContainer = ({imgSrc}) => {
         // faceapi.draw.drawFaceLandmarks(canvasRef.current, resized);
         //MOSTRAR EXPRESSAO FACIAL(feliz, triste, zangado...)
         // faceapi.draw.drawFaceExpressions(canvasRef.current, resized);
-
-        // console.log(canvasRef);
     }
     useEffect(() => {
         const loadedModels = () => {
@@ -36,12 +34,11 @@ const FaceContainer = ({imgSrc}) => {
                 faceapi.nets.faceExpressionNet.loadFromUri('/weights'),
             ])
             .then(handleImage)
-            .catch((error) =>console.log('Erro na promise: '+error));
+            .catch((error) =>console.log('Erro na Promise: '+error));
         }
         imgRef && loadedModels();
     },[]);
-   
-    
+
     return(
         <div className="facecontainer">
             <canvas ref={canvasRef} width="400px" height="400px"></canvas>

@@ -10,17 +10,17 @@
     font-size: 14pt;
 }
 .inputForm{
-    background:rgb(255, 255, 255);
+    height: 4rem;
 }
 .inputForm input{
     width: 90%;
     line-height: 50px;
     padding: 0 5px;
-    /* margin: 0 5px; */
     text-align: center;
-    border-radius: 5px;
     border: none;
     outline: none;
+    background: rgb(241, 241, 241);
+    margin: .4rem auto;
 }
 /* .inputForm button{
     background-color: rgb(228,110,218);

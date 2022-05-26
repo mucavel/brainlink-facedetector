@@ -24,7 +24,7 @@ const FaceContainer = ({imgSrc}) => {
         //MAPEAR PONTOS NA CARA/ROSTO
         // faceapi.draw.drawFaceLandmarks(canvasRef.current, resized);
         //MOSTRAR EXPRESSAO FACIAL(feliz, triste, zangado...)
-        // faceapi.draw.drawFaceExpressions(canvasRef.current, resized);
+        faceapi.draw.drawFaceExpressions(canvasRef.current, resized);
     }
     useEffect(() => {
         const loadedModels = () => {
@@ -42,7 +42,7 @@ const FaceContainer = ({imgSrc}) => {
     return(
         <div className="facecontainer">
             <canvas ref={canvasRef} width="400px" height="400px"></canvas>
-            <img crossOrigin="anonymous" ref={imgRef} src={imgSrc} alt=""/>
+            <img crossOrigin="anonymous" ref={imgRef} src={imgSrc} alt="Link ou imagem quebrados :-\"/>
         </div>
     );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import './css/InputForm.css'
 
-const InputForm = ({onInputChange, onButtonClick}) =>{
+const InputForm = ({onInputChange}) =>{
     return(
         <div className="inputContainer">
             <div className="textForm white">
@@ -9,7 +9,7 @@ const InputForm = ({onInputChange, onButtonClick}) =>{
             </div>
             <div className="inputForm shadow-1">
                 <input type="text" placeholder="Cole o link da imagem aqui" required onChange={onInputChange}/>
-                <button onClick={onButtonClick}>Detectar</button>
+                {/* <button disable="true">Detectar</button> */}
             </div>
         </div>
     );

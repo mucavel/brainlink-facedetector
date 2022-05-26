@@ -5,7 +5,6 @@ import Rank from "../components/Rank/Rank";
 import InputForm from "../components/InputForm/InputForm";
 import ParticlesBG from "../components/ParticlesBG/Particle";
 import FaceContainer from "../components/FaceContainer/FaceContainer";
-import testImg from '../components/FaceContainer/example.png';
 
 class App extends React.Component{
     constructor(){
@@ -16,22 +15,31 @@ class App extends React.Component{
     }
 
     onInputChange = (event) => {
-        // this.setState({input : event.target.value})
+        this.setState({input : event.target.value})
     }
-    onButtonClick = () => {
-        console.log('cliked')
-        
-    }
+   
     render(){
+       if(this.state.input === ''){
         return(
             <div className="AppContainer tc">
                 <ParticlesBG />
                 <Navbar />
                 <Rank />
-                <InputForm onInputChange={this.onInputChange} onButtonClick={this.onButtonClick}/>
-                <FaceContainer imgSrc={testImg}/>
+                <InputForm onInputChange={this.onInputChange}/>
             </div>
         );
+       }else{
+            return(
+                <div className="AppContainer tc">
+                    <ParticlesBG />
+                    <Navbar />
+                    <Rank />
+                    <InputForm onInputChange={this.onInputChange}/>
+                    <FaceContainer imgSrc={this.state.input}/>
+                </div>
+            );
+       }
+
     }
 }
 export default App;

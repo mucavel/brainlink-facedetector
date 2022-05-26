@@ -1,7 +1,7 @@
 import React from "react";
 import './css/NavBar.css';
 import brainLogo from './images/electro-brain.png'
-import signoutIco from './images/signout-ico.png'
+// import signoutIco from './images/signout-ico.png'
 
 const Navbar = () => {
     return(
@@ -15,8 +15,8 @@ const Navbar = () => {
                 </div>
                 <div className="signout">
                     <span style={{display: 'flex'}}>
-                        <p>Sair</p>
-                        <img className="signout-icon" src={signoutIco} alt="Sign out" />
+                        {/* <p>Sair</p>
+                        <img className="signout-icon" src={signoutIco} alt="Sign out" /> */}
                     </span>
                 </div>
             </nav>

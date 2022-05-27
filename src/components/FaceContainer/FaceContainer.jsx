@@ -29,9 +29,9 @@ const FaceContainer = ({imgSrc}) => {
     useEffect(() => {
         const loadedModels = () => {
             Promise.all([
-                faceapi.nets.tinyFaceDetector.loadFromUri('/weights'),
-                faceapi.nets.faceLandmark68Net.loadFromUri('/weights'),
-                faceapi.nets.faceExpressionNet.loadFromUri('/weights'),
+                faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
+                faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
+                faceapi.nets.faceExpressionNet.loadFromUri('/models'),
             ])
             .then(handleImage)
             .catch((error) =>console.log('Erro na Promise: '+error));

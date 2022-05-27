@@ -4,15 +4,10 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(228,110,218);
-  background: linear-gradient(90deg, rgb(189, 98, 181) 0%, rgba(238,83,225,1) 44%, rgb(14, 170, 201) 100%);
-
+  background: rgb(1,1,52);
+  background: linear-gradient(90deg, rgb(189, 44, 165) 0%, rgb(54, 83, 179) 100%);
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-button{
-  cursor: pointer;
 }

@@ -9,7 +9,6 @@ const InputForm = ({onInputChange}) =>{
             </div>
             <div className="inputForm shadow-1">
                 <input type="text" placeholder="Cole o link da imagem aqui" required onChange={onInputChange}/>
-                {/* <button disable="true">Detectar</button> */}
             </div>
         </div>
     );

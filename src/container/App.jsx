@@ -1,7 +1,6 @@
 import React from "react";
 import './css/App.css';
 import Navbar from "../components/NavBar/Navbar";
-import Rank from "../components/Rank/Rank";
 import InputForm from "../components/InputForm/InputForm";
 import ParticlesBG from "../components/ParticlesBG/Particle";
 import FaceContainer from "../components/FaceContainer/FaceContainer";
@@ -24,7 +23,6 @@ class App extends React.Component{
             <div className="AppContainer tc">
                 <ParticlesBG />
                 <Navbar />
-                <Rank />
                 <InputForm onInputChange={this.onInputChange}/>
             </div>
         );
@@ -33,7 +31,6 @@ class App extends React.Component{
                 <div className="AppContainer tc">
                     <ParticlesBG />
                     <Navbar />
-                    <Rank />
                     <InputForm onInputChange={this.onInputChange}/>
                     <FaceContainer imgSrc={this.state.input}/>
                 </div>

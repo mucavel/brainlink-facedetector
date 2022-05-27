@@ -7,7 +7,7 @@
     padding: 0;
 }
 .navbarContainer{
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0,0,0,.3);
     position: relative;
 }
 .navbar{
@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-around;
     color: #fff;
+    position: relative;
 }
 .navlogo h1{
     font-family: 'Circuit', Arial, Helvetica, sans-serif;
@@ -27,33 +28,17 @@
     height: 3.5rem;
     padding: 5px 20px 5px 5px;
 }
-.signout{
-    display: flex;
-    /* justify-content: flex-end; */
-    margin-top: 1.5rem;
-}
-.signout-icon{
-    width: 30px;
-    height: 30px;
-    margin: -5px 0 0 5px;
-}
+
 @media screen and (max-width: 700px){
     .navbar{
       width: 100%;
       flex-direction: column;
     }
-    .navlogo,
-    .signout{
+    .navlogo{
       width: 100%;
       justify-content: center;
     }
     .navlogo img{
         padding: 10px 10px 0 5px;
-    }
-    .signout{
-        margin-top: 1rem;
-    }
-    .signout-icon{
-        margin: -5px 0 0 5px;
     }
   }

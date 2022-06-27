@@ -30,4 +30,4 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 A página será recarregada quando você fizer alterações.\
-Você também pode ver erros de lint no consol
+Você também pode ver erros de lint no console.

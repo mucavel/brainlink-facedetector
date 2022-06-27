@@ -4,6 +4,7 @@ import Navbar from "../components/NavBar/Navbar";
 import InputForm from "../components/InputForm/InputForm";
 import ParticlesBG from "../components/ParticlesBG/Particle";
 import FaceContainer from "../components/FaceContainer/FaceContainer";
+import UploadButton from "../components/InputForm/UploadButton";
 
 class App extends React.Component{
     constructor(){
@@ -16,6 +17,9 @@ class App extends React.Component{
     onInputChange = (event) => {
         this.setState({input : event.target.value})
     }
+    onFileUpload = (event) => {
+        this.setState({input : event})
+    }
    
     render(){
        if(this.state.input === ''){
@@ -24,6 +28,7 @@ class App extends React.Component{
                 <ParticlesBG />
                 <Navbar />
                 <InputForm onInputChange={this.onInputChange}/>
+                <UploadButton onFileUpload={this.onFileUpload}/>
             </div>
         );
        }else{
@@ -32,6 +37,7 @@ class App extends React.Component{
                     <ParticlesBG />
                     <Navbar />
                     <InputForm onInputChange={this.onInputChange}/>
+                    <UploadButton onFileUpload={this.onFileUpload}/>
                     <FaceContainer imgSrc={this.state.input}/>
                 </div>
             );

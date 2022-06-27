@@ -37,7 +37,7 @@ const FaceContainer = ({imgSrc}) => {
             .catch((error) =>console.log('Erro na Promise: '+error));
         }
         imgRef && loadedModels();
-    },[]);
+    },[imgSrc]);
 
     return(
         <div className="facecontainer">

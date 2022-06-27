@@ -30,4 +30,8 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 A página será recarregada quando você fizer alterações.\
+<<<<<<< HEAD
 Você também pode ver erros de lint no console.
+=======
+Você também pode ver erros de lint no console.
+>>>>>>> ed714d05f2e41aac528e42c3caac0bd748a616be

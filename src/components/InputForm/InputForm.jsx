@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React from "react";
 import './css/InputForm.css'
 
 const InputForm = ({onInputChange}) =>{
